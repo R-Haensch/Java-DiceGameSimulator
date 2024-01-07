@@ -10,9 +10,11 @@ Execute App.Java
 
 ## Modify the game
 
-In the App.java add or remove the GameController instantiation
+In the App.java add or remove the GameController instantiation.
+
 The function is build as follows: rounds played, the rules played by, the ui to send the outcome to, and the player who plays the game.
-> new GameController(1000000, new RuleOneInSix(), ui, new Player());
+
+>      new GameController(1000000, new RuleOneInSix(), ui, new Player());
 
 ## Rules
 
