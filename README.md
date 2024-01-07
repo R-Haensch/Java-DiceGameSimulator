@@ -5,6 +5,7 @@ This program simulates dice games.
 ## Run the program
 
 Install Java 1.7
+
 Execute App.Java
 
 ## Modify the game
