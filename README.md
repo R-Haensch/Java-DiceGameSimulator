@@ -17,22 +17,36 @@ The function is build as follows: rounds played, the rules played by, the ui to 
 
 You can add new rules by adding a new class deriving from Rules.
 
-Define the rule like the following:
-> // constructor with game frame
->    public RuleOneInSix(){
+>     // constructor with game frame
+>
+>      public RuleOneInSix(){
+>
 >        dice.add(new Dice());
+>
 >        startString = "Start ´One in 6´ game";
+>
 >        rolls = 6; 
->    }
+>
+>      }
+>
 > 
-> // override the calculation of the win condition.  
->    @Override public boolean isRollAWin(ArrayList<Long> roll){
+>
+>     // override the calculation of the win condition.  
+>
+>      @Override public boolean isRollAWin(ArrayList<Long> roll){
+>
 >        for (Long face : roll) {
+>
 >            if(face == Constants.WINNING_FACE){
+>
 >                return true;
+>
 >            }
+>
 >        }
+>
 >        return false;
+>
 >    }
 
 ## Design choices
